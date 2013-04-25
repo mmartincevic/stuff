@@ -1,0 +1,12 @@
+set pastetoggle=<F2>
+set tabstop=4
+set ts=4
+set shiftwidth=4
+set expandtab
+set autowrite
+set ai
+set nu
+set nocompatible
+set hlsearch
+set showmatch
+set tags=.ctags;/
