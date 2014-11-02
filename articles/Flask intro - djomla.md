@@ -13,10 +13,7 @@ So to explain this quote a bit further, werkzeug is python utility library and j
 #### Why flask?
 
 Year ago i was looking into another programming language outside of PHP. I was an active PHP developer for 10 years, and, to be honest, doing apps only in PHP get's a bit boring. Also, having not really standardised frameworks, libraryes also didn't helped. I found myself spending half of my time reinventing the wheel just for the sake of reinventing something. Thinking i know better than the other PHP developer often leads in spending too much time for the project. 
-This is so common in PHP world. Almost every other developer is building his own framework. And this leads to chaos, but let's not go there now.
-
-Someone would say but "But nowadays you have composer"
-Sure, nowadays you have things like composer and you can base your project on that one and fully depend on other people libraries, just like in Python. Again, using composer i very often had troubles with lack of documentation, tests, strange bugs.
+This is so common in PHP world. Almost every other developer is building his own framework. And this can lead to certain type of chaos, but let's not go there now.
 
 So i was searching for something new and at work we just started to use Django for serious web development. Django at that point seemed like too big of a framework and i wanted something small that i can build upon. And i stumbled upon Flask. 
 Since then i've been using flask for most of mine personal development projects. 
@@ -25,12 +22,12 @@ In this article i will cover installing and configuring flask and basic hello wo
 
 
 ### Download & Install 
-To get started you will need Python 2.6 or higher, so please make sure you have a valid python installation, and this will not cover Python 3.x although the differences should be minimal.
+To get started you will need Python 2.6 or higher, please make sure you have a valid python installation. Also this will not cover Python 3.x although the differences should be minimal.
 
 First we need **virtualenv**.
 
 Brief intro on virtualenv:
-As a Python developer you will most likely build different application with different dependencies, maybe even on different python versions. To solve dependencies and used libraries stacking on your machine we use virtualenv. Virtualenv creates a separate environment for your application. In that way you can keep you application environments fully isolated. For more info go to :
+As a Python developer you will most likely build different application. Different applications have different dependencies, maybe even different python versions. To solve dependencies and used libraries stacking on your machine we use virtualenv. Virtualenv creates a separate environment for your application. In that way you can keep you application environments fully isolated. For more info go to :
 
 But let's install it
 
@@ -48,7 +45,7 @@ Once the virtualenv is installed fire up shell and create a new environment.
 > New python executable in env/bin/python
 Installing distribute............done.
 
-Now you have a directory called "flaskproject" and inside that directory another one (with you environment) called "env". To start
+Now you have a directory called "flaskproject". Inside that directory you have another one (with your environment) called "env". To start
 using your environment you need to "activate" it.
 
 > . env/bin/activate
@@ -125,7 +122,7 @@ to main_method. Simple?
 > @app.route('/') 
 
 
-Final piece of code makes sure if the script is run from within shell directly with python interpreter, and not used like a module for import then run it.
+This final piece of code checks if the script is called directly, and not like imported module. If that's the case it will run the code automatically.
 
     if __name__ == '__main__':
             app.run()
