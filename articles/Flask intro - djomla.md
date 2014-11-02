@@ -18,7 +18,7 @@ This is so common in PHP world. Almost every other developer is building his own
 So i was searching for something new and at work we just started to use Django for serious web development. Django at that point seemed like too big of a framework and i wanted something small that i can build upon. And i stumbled upon Flask. 
 Since then i've been using flask for most of mine personal development projects. 
 
-In this article i will cover installing and configuring flask and basic hello world example. Also i will persume that you have linux machine installed (or mac). If you are using windows machine for development - we need to have a serious talk.
+In this article i will cover installing and configuring flask and basic hello world example. Also i will persume that you have linux machine installed (or mac).
 
 
 ### Download & Install 
