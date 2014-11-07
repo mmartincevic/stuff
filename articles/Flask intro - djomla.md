@@ -170,7 +170,7 @@ Now let's pass a parameter to a template. Check this line:
 
 > return render_template('fun_url.html')
 
-If we slightly modify that line and add the following:
+If we slightly change that line and add the following:
 
     return render_template('fun_url.html', fun_param=param)
 
@@ -190,7 +190,8 @@ Save results and restart server. You should get this response:
 
 ### Where to go from here
 
-The things written in this article, in my opinion, are not the things that Flask development really shines in accomplishing. These are more of a beginner intro so you can have a feeling of how Flask works. As soon as you start working with databases, user access, rest api - that's where things get really nice and simple. But for now the best place to start is 
+There are a lot more of things you can do with Flask, things where flask really shines in accomplishing.
+These are more of a beginner intro so you can have a feeling of how Flask works. As soon as you start working with databases, user access, rest api - that's where things get really nice and simple. But for now the best place to start is 
 
 [Official Flask documentation](http://flask.pocoo.org/docs/0.10/)
 
