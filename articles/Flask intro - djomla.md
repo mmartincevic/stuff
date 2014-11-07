@@ -125,7 +125,7 @@ to main_method. Simple?
 This final piece of code checks if the script is called directly, and not like imported module. If that's the case it will run the code automatically.
 
     if __name__ == '__main__':
-            app.run()
+        app.run()
 
 ### Templates fun
 
